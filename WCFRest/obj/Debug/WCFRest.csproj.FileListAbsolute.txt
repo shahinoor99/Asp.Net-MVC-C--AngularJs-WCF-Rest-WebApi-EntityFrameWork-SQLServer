@@ -1,0 +1,10 @@
+D:\Test Proj\Asp.NetMVCAngularJsWCFRestWebApi\WCFRest\bin\WCFRest.dll.config
+D:\Test Proj\Asp.NetMVCAngularJsWCFRestWebApi\WCFRest\bin\WCFRest.dll
+D:\Test Proj\Asp.NetMVCAngularJsWCFRestWebApi\WCFRest\bin\WCFRest.pdb
+D:\Test Proj\Asp.NetMVCAngularJsWCFRestWebApi\WCFRest\bin\EntityFramework.dll
+D:\Test Proj\Asp.NetMVCAngularJsWCFRestWebApi\WCFRest\bin\EntityFramework.SqlServer.dll
+D:\Test Proj\Asp.NetMVCAngularJsWCFRestWebApi\WCFRest\bin\EntityFramework.xml
+D:\Test Proj\Asp.NetMVCAngularJsWCFRestWebApi\WCFRest\bin\EntityFramework.SqlServer.xml
+D:\Test Proj\Asp.NetMVCAngularJsWCFRestWebApi\WCFRest\obj\Debug\WCFRest.csprojResolveAssemblyReference.cache
+D:\Test Proj\Asp.NetMVCAngularJsWCFRestWebApi\WCFRest\obj\Debug\WCFRest.dll
+D:\Test Proj\Asp.NetMVCAngularJsWCFRestWebApi\WCFRest\obj\Debug\WCFRest.pdb

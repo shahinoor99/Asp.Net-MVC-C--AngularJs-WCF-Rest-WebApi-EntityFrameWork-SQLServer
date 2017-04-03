@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="EMBRACING_DBModelStoreContainer" CdmEntityContainer="EMBRACING_DBEntities">
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="EMBRACING_DBModel.User">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+          <ScalarProperty Name="EmailId" ColumnName="EmailId" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="LastLogin" ColumnName="LastLogin" />
+          <ScalarProperty Name="AccountCreatedDate" ColumnName="AccountCreatedDate" />
+          <ScalarProperty Name="LoginAttempt" ColumnName="LoginAttempt" />
+          <ScalarProperty Name="IsLocked" ColumnName="IsLocked" />
+          <ScalarProperty Name="CreatedById" ColumnName="CreatedById" />
+          <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+          <ScalarProperty Name="SalutationId" ColumnName="SalutationId" />
+          <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+          <ScalarProperty Name="MD" ColumnName="MD" />
+          <ScalarProperty Name="DateOfBirth" ColumnName="DateOfBirth" />
+          <ScalarProperty Name="mailingdate" ColumnName="mailingdate" />
+          <ScalarProperty Name="MailingAddressId" ColumnName="MailingAddressId" />
+          <ScalarProperty Name="MarkForPrinting" ColumnName="MarkForPrinting" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="Resume" ColumnName="Resume" />
+          <ScalarProperty Name="HiringStartDate" ColumnName="HiringStartDate" />
+          <ScalarProperty Name="HiringEndDate" ColumnName="HiringEndDate" />
+          <ScalarProperty Name="HIPAATraining" ColumnName="HIPAATraining" />
+          <ScalarProperty Name="CORI" ColumnName="CORI" />
+          <ScalarProperty Name="CoriExpiry" ColumnName="CoriExpiry" />
+          <ScalarProperty Name="ESORI" ColumnName="ESORI" />
+          <ScalarProperty Name="EsoriExpiry" ColumnName="EsoriExpiry" />
+          <ScalarProperty Name="FraudCheck" ColumnName="FraudCheck" />
+          <ScalarProperty Name="Notes" ColumnName="Notes" />
+          <ScalarProperty Name="InterpreterNo" ColumnName="InterpreterNo" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="IsText" ColumnName="IsText" />
+          <ScalarProperty Name="IsEmail" ColumnName="IsEmail" />
+          <ScalarProperty Name="IsEligibleToReturn" ColumnName="IsEligibleToReturn" />
+          <ScalarProperty Name="HomeAddress" ColumnName="HomeAddress" />
+          <ScalarProperty Name="CityId" ColumnName="CityId" />
+          <ScalarProperty Name="StateId" ColumnName="StateId" />
+          <ScalarProperty Name="InterpreterStatus" ColumnName="InterpreterStatus" />
+          <ScalarProperty Name="CredentialId" ColumnName="CredentialId" />
+          <ScalarProperty Name="Zip" ColumnName="Zip" />
+          <ScalarProperty Name="ResumeFilePath" ColumnName="ResumeFilePath" />
+          <ScalarProperty Name="FileName" ColumnName="FileName" />
+          <ScalarProperty Name="RolesWithCCCS" ColumnName="RolesWithCCCS" />
+          <ScalarProperty Name="FormOfTransportations" ColumnName="FormOfTransportations" />
+          <ScalarProperty Name="InterpreterStatusId" ColumnName="InterpreterStatusId" />
+          <ScalarProperty Name="OrganizationsId" ColumnName="OrganizationsId" />
+          <ScalarProperty Name="CredentialLst" ColumnName="CredentialLst" />
+          <ScalarProperty Name="Car" ColumnName="Car" />
+          <ScalarProperty Name="PublicTransport" ColumnName="PublicTransport" />
+          <ScalarProperty Name="VendorContactId" ColumnName="VendorContactId" />
+          <ScalarProperty Name="StudentCategoryId" ColumnName="StudentCategoryId" />
+          <ScalarProperty Name="ContractId" ColumnName="ContractId" />
+          <ScalarProperty Name="LinkedUsers" ColumnName="LinkedUsers" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

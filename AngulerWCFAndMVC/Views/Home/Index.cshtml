@@ -1,0 +1,255 @@
+﻿<script src="~/Scripts/angular.js"></script>
+
+<html data-ng-app="myModule">
+@{
+    ViewBag.Title = "Manage Student Information using AngularJs, WCF REST & MVC4";
+}
+
+<body>
+    <form name="myForm">
+        <table id="tblContainer" data-ng-controller="myController">
+            <tr>
+                <td>
+                    <table style="border: solid 2px Green; padding: 5px;">
+                        <tr style="height: 30px; background-color: skyblue; color: maroon;">
+                            <th></th>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Address</th>
+                            <th>City</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                        <tbody data-ng-repeat="user in Users">
+                            <tr>
+                                <td></td>
+                                <td><span>{{user.Id}}</span></td>
+                                <td><span>{{user.Name}}</span></td>
+                                <td><span>{{user.Address}}</span></td>
+                                <td><span>{{user.City}}</span></td>
+                                <td>
+                                    <input type="button" id="Edit" value="Edit" data-ng-click="get(user)" />
+                                </td>
+
+                                <td>
+                                    <input type="button" id="Delete" value="Delete" data-ng-click="delete(user)" />
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div style="color: red;">{{Message}}</div>
+                    <table style="border: solid 4px Red; padding: 2px;">
+                        <tr>
+                            <td></td>
+                            <td>
+                                <span>User ID</span>
+                            </td>
+                            <td>
+                                <input type="text" id="Id" readonly="readonly" data-ng-model="Id" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <span>Name</span>
+                            </td>
+                            <td>
+                                <input type="text" id="sName" required data-ng-model="Name" />
+                                <span style="color:red" data-ng-show="myForm.Name.$invalid">
+                                    Student Roll Number is required.
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <span>Address</span>
+                            </td>
+                            <td>
+                                <input type="text" id="sAddress" required data-ng-model="Address" />
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td>
+                                <span>City</span>
+                            </td>
+                            <td>
+                                <input type="text" id="sCity" required data-ng-model="City" />
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <input type="button" id="save" value="Save" data-ng-click="save()" />
+
+                                <input type="button" id="Clear" value="Clear" data-ng-click="clear()" />
+                            </td>
+                        </tr>
+                    </table>
+
+                </td>
+            </tr>
+
+        </table>
+    </form>
+</body>
+</html>
+
+<script>
+
+    //Model
+    myApp = angular.module('myModule', []);
+
+    //Service
+    myApp.service("crudAJService", function ($http) {
+        //get All Books
+
+        this.getUsers = function () {
+            return $http({
+                url: "/Home/GetAllUser",
+                //We can call values from WCF Service through as well check below url for that
+                //url: "/Home/GetAllUserByWCFServiceThrough",
+                method: "GET"
+                //params: { number: 4, name: "angular" }
+            });
+
+            //return $http({
+            //    method: "post",
+            //    url: "http://localhost:8080//UserService.svc/AddNewUser",
+            //    data: UserTable
+            //});
+        };
+        // get User by Id
+        this.get = function (Id) {
+            var response = $http({
+                method: "post",
+                url: "Home/GetUserById",
+                params: {
+                    id: JSON.stringify(Id)
+                }
+            });
+            return response;
+        }
+        // Update User
+        this.updateUser = function (User) {
+            var response = $http({
+                method: "post",
+                url: "Home/UpdateUser",
+                data: JSON.stringify(User),
+                dataType: "json"
+            });
+            return response;
+        }
+
+        // Add Book
+        this.AddUser = function (User) {
+            var response = $http({
+                method: "post",
+                url: "Home/AddUser",
+                data: JSON.stringify(User),
+                dataType: "json"
+            });
+            return response;
+        }
+        // Delete User by Id
+        this.Delete = function (Id) {
+            var response = $http({
+                method: "post",
+                url: "Home/DeleteUserById",
+                params: {
+                    id: JSON.stringify(Id)
+                }
+            });
+            return response;
+        }
+    });
+
+    //Controller
+    myApp.controller('myController', function ($scope, crudAJService) {
+        GetAllUsers();
+        //To Get all book records
+        function GetAllUsers() {
+            var getUsersData = crudAJService.getUsers();
+            getUsersData.then(function (Users) {
+                $scope.Users = Users.data;
+            }, function () {
+                alert('Error in getting Users records');
+            });
+        }
+
+        //Add and Update Record
+        $scope.save = function () {
+            var UserTable = {
+                Id: $scope.Id,
+                Name: $scope.Name,
+                Address: $scope.Address,
+                City: $scope.City
+            };
+            //var getUserAction = $scope.Action;
+            var id = $scope.Id;
+            if (id != undefined) {
+                UserTable.Id = $scope.Id;
+                var getUserData = crudAJService.updateUser(UserTable);
+                getUserData.then(function (msg) {
+                    GetAllUsers();
+                    alert(msg.data);
+                    $scope.divUser = false;
+                }, function () {
+                    alert('Error in updating User record');
+                });
+            } else {
+                var getUserData = crudAJService.AddUser(UserTable);
+                getUserData.then(function (msg) {
+                    GetAllUsers();
+                    alert(msg.data);
+                    $scope.divUser = false;
+                }, function () {
+                    alert('Error in adding User record');
+                });
+            }
+        }
+        //To Get User Detail on the Base of User ID
+        $scope.get = function (User) {
+            var promiseGetSingle = crudAJService.get(User.Id);
+            promiseGetSingle.then(function (pl) {
+                var res = pl.data;
+                $scope.Id = res.Id;
+                $scope.Name = res.Name;
+                $scope.Address = res.Address;
+                $scope.City = res.City;
+                $scope.OperType = 0;
+            },
+                      function (errorPl) {
+                          console.log('Some Error in Getting Details', errorPl);
+                      });
+        }
+
+        //To Delete User Base of User ID
+        $scope.delete = function (User) {
+            var deleteuser = crudAJService.Delete(User.Id);
+            deleteuser.then(function (pl) {
+                GetAllUsers();
+                alert(msg.data);
+            },
+                      function (errorPl) {
+                          console.log('Some Error in Delete Record Details', errorPl);
+                      });
+        }
+        //To Clear all input controls.
+        $scope.clear = function () {
+            $scope.Id = "";
+            $scope.Name = "";
+            $scope.Address = "";
+            $scope.City = "";
+        }
+    });
+</script>

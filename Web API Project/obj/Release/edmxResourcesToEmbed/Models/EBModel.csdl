@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EMBRACING_DBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LastName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Mobile" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EmailId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="LastLogin" Type="DateTime" Precision="3" />
+    <Property Name="AccountCreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="LoginAttempt" Type="Int32" />
+    <Property Name="IsLocked" Type="Boolean" />
+    <Property Name="CreatedById" Type="Int32" />
+    <Property Name="CategoryId" Type="Int32" />
+    <Property Name="SalutationId" Type="Int32" />
+    <Property Name="MiddleName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MD" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="DateOfBirth" Type="DateTime" Precision="0" />
+    <Property Name="mailingdate" Type="DateTime" Precision="0" />
+    <Property Name="MailingAddressId" Type="Int32" />
+    <Property Name="MarkForPrinting" Type="Boolean" Nullable="false" />
+    <Property Name="Comments" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Resume" Type="Boolean" Nullable="false" />
+    <Property Name="HiringStartDate" Type="DateTime" Precision="0" />
+    <Property Name="HiringEndDate" Type="DateTime" Precision="0" />
+    <Property Name="HIPAATraining" Type="Boolean" Nullable="false" />
+    <Property Name="CORI" Type="Boolean" Nullable="false" />
+    <Property Name="CoriExpiry" Type="DateTime" Precision="0" />
+    <Property Name="ESORI" Type="Boolean" Nullable="false" />
+    <Property Name="EsoriExpiry" Type="DateTime" Precision="0" />
+    <Property Name="FraudCheck" Type="Boolean" Nullable="false" />
+    <Property Name="Notes" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="InterpreterNo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Gender" Type="String" MaxLength="7" FixedLength="false" Unicode="false" />
+    <Property Name="IsText" Type="Boolean" />
+    <Property Name="IsEmail" Type="Boolean" />
+    <Property Name="IsEligibleToReturn" Type="Boolean" />
+    <Property Name="HomeAddress" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="CityId" Type="Int32" />
+    <Property Name="StateId" Type="Int32" />
+    <Property Name="InterpreterStatus" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CredentialId" Type="Int32" />
+    <Property Name="Zip" Type="Int32" />
+    <Property Name="ResumeFilePath" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="FileName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="RolesWithCCCS" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="FormOfTransportations" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="InterpreterStatusId" Type="Int32" />
+    <Property Name="OrganizationsId" Type="Int32" />
+    <Property Name="CredentialLst" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Car" Type="Boolean" Nullable="false" />
+    <Property Name="PublicTransport" Type="Boolean" Nullable="false" />
+    <Property Name="VendorContactId" Type="Int32" />
+    <Property Name="StudentCategoryId" Type="Int32" />
+    <Property Name="ContractId" Type="Int32" />
+    <Property Name="LinkedUsers" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Users1" Relationship="Self.FK_Users_Users" FromRole="Users" ToRole="Users1" />
+    <NavigationProperty Name="User1" Relationship="Self.FK_Users_Users" FromRole="Users1" ToRole="Users" />
+  </EntityType>
+  <Association Name="FK_Users_Users">
+    <End Role="Users" Type="Self.User" Multiplicity="0..1" />
+    <End Role="Users1" Type="Self.User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Users1">
+        <PropertyRef Name="CreatedById" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="EMBRACING_DBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Users" EntityType="Self.User" />
+    <AssociationSet Name="FK_Users_Users" Association="Self.FK_Users_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Users1" EntitySet="Users" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

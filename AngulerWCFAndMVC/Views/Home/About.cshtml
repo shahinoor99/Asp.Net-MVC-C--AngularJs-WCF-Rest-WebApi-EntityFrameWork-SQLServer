@@ -1,0 +1,55 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+<script src="http://localhost:60039/Scripts/jquery-3.1.1.min.js"></script>
+<script lang="ja" type="text/javascript">
+    //Called Data With Web API
+    function AllcarDetails() {
+        $.ajax({
+            type: "GET",
+            url: "http://localhost:60039/values/Get", //URI
+            dataType: "json",
+            success: function (data) {
+                //var datadatavalue = data;
+                //var myJsonObject = datadatavalue;
+                //contentType: "application/json";
+                $.each(data, function (i, mobj) {
+                    $("#Cartbl").append('<tr><td width="50px">' + mobj.Name +
+                     '</td><td width="50px">' + mobj.Address +
+                    '</td><td width="50px">' + mobj.City +
+                    '</td>' + '</td></tr>');
+
+                });
+
+            },
+            error: function (xhr) {
+                alert(xhr.responseText);
+            }
+        });
+
+    }
+</script>
+<hgroup class="title">
+    <h1>@ViewBag.Title.</h1>
+    <h2>@ViewBag.Message</h2>
+</hgroup>
+<button id="AllcarDetails" onclick="AllcarDetails();" value="Get Users">Get User Data</button>
+<table id="Cartbl">
+    <tr>
+        <th>Name &nbsp; </th>
+        <th>Address &nbsp;</th>
+        <th>&nbsp; City &nbsp;</th>
+    </tr>
+</table>
+
+<aside>
+    <h3>Aside Title</h3>
+    <p>
+        Use this area to provide additional information.
+    </p>
+    <ul>
+        <li>@Html.ActionLink("Home", "Index", "Home")</li>
+        <li>@Html.ActionLink("About", "About", "Home")</li>
+        <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+    </ul>
+</aside>

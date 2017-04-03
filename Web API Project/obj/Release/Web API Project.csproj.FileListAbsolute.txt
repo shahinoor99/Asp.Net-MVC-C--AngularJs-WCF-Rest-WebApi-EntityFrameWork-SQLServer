@@ -1,0 +1,65 @@
+D:\PC Backup\AngularAndMVC\Web API Project\bin\Web API Project.dll.config
+D:\PC Backup\AngularAndMVC\Web API Project\bin\Web API Project.dll
+D:\PC Backup\AngularAndMVC\Web API Project\bin\Web API Project.pdb
+D:\PC Backup\AngularAndMVC\Web API Project\bin\Antlr3.Runtime.dll
+D:\PC Backup\AngularAndMVC\Web API Project\bin\EntityFramework.dll
+D:\PC Backup\AngularAndMVC\Web API Project\bin\Microsoft.Data.Edm.dll
+D:\PC Backup\AngularAndMVC\Web API Project\bin\Microsoft.Data.OData.dll
+D:\PC Backup\AngularAndMVC\Web API Project\bin\Microsoft.Web.Infrastructure.dll
+D:\PC Backup\AngularAndMVC\Web API Project\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+D:\PC Backup\AngularAndMVC\Web API Project\bin\Newtonsoft.Json.dll
+D:\PC Backup\AngularAndMVC\Web API Project\bin\System.Spatial.dll
+D:\PC Backup\AngularAndMVC\Web API Project\bin\System.Web.Helpers.dll
+D:\PC Backup\AngularAndMVC\Web API Project\bin\System.Web.Http.OData.dll
+D:\PC Backup\AngularAndMVC\Web API Project\bin\System.Web.Http.Tracing.dll
+D:\PC Backup\AngularAndMVC\Web API Project\bin\System.Web.Mvc.dll
+D:\PC Backup\AngularAndMVC\Web API Project\bin\System.Web.Optimization.dll
+D:\PC Backup\AngularAndMVC\Web API Project\bin\System.Web.Providers.dll
+D:\PC Backup\AngularAndMVC\Web API Project\bin\System.Web.Razor.dll
+D:\PC Backup\AngularAndMVC\Web API Project\bin\System.Web.WebPages.Deployment.dll
+D:\PC Backup\AngularAndMVC\Web API Project\bin\System.Web.WebPages.dll
+D:\PC Backup\AngularAndMVC\Web API Project\bin\System.Web.WebPages.Razor.dll
+D:\PC Backup\AngularAndMVC\Web API Project\bin\WebGrease.dll
+D:\PC Backup\AngularAndMVC\Web API Project\bin\EntityFramework.xml
+D:\PC Backup\AngularAndMVC\Web API Project\bin\Newtonsoft.Json.xml
+D:\PC Backup\AngularAndMVC\Web API Project\bin\System.Web.Helpers.xml
+D:\PC Backup\AngularAndMVC\Web API Project\bin\System.Web.Mvc.xml
+D:\PC Backup\AngularAndMVC\Web API Project\bin\System.Web.Razor.xml
+D:\PC Backup\AngularAndMVC\Web API Project\bin\System.Web.WebPages.xml
+D:\PC Backup\AngularAndMVC\Web API Project\bin\System.Web.WebPages.Deployment.xml
+D:\PC Backup\AngularAndMVC\Web API Project\bin\System.Web.WebPages.Razor.xml
+D:\PC Backup\AngularAndMVC\Web API Project\bin\System.Web.Http.Tracing.xml
+D:\PC Backup\AngularAndMVC\Web API Project\bin\System.Web.Http.OData.xml
+D:\PC Backup\AngularAndMVC\Web API Project\bin\Microsoft.Data.Edm.xml
+D:\PC Backup\AngularAndMVC\Web API Project\bin\Microsoft.Data.OData.xml
+D:\PC Backup\AngularAndMVC\Web API Project\bin\System.Spatial.xml
+D:\PC Backup\AngularAndMVC\Web API Project\bin\de\Microsoft.Data.Edm.resources.dll
+D:\PC Backup\AngularAndMVC\Web API Project\bin\es\Microsoft.Data.Edm.resources.dll
+D:\PC Backup\AngularAndMVC\Web API Project\bin\fr\Microsoft.Data.Edm.resources.dll
+D:\PC Backup\AngularAndMVC\Web API Project\bin\it\Microsoft.Data.Edm.resources.dll
+D:\PC Backup\AngularAndMVC\Web API Project\bin\ja\Microsoft.Data.Edm.resources.dll
+D:\PC Backup\AngularAndMVC\Web API Project\bin\ko\Microsoft.Data.Edm.resources.dll
+D:\PC Backup\AngularAndMVC\Web API Project\bin\ru\Microsoft.Data.Edm.resources.dll
+D:\PC Backup\AngularAndMVC\Web API Project\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+D:\PC Backup\AngularAndMVC\Web API Project\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+D:\PC Backup\AngularAndMVC\Web API Project\bin\de\Microsoft.Data.OData.resources.dll
+D:\PC Backup\AngularAndMVC\Web API Project\bin\es\Microsoft.Data.OData.resources.dll
+D:\PC Backup\AngularAndMVC\Web API Project\bin\fr\Microsoft.Data.OData.resources.dll
+D:\PC Backup\AngularAndMVC\Web API Project\bin\it\Microsoft.Data.OData.resources.dll
+D:\PC Backup\AngularAndMVC\Web API Project\bin\ja\Microsoft.Data.OData.resources.dll
+D:\PC Backup\AngularAndMVC\Web API Project\bin\ko\Microsoft.Data.OData.resources.dll
+D:\PC Backup\AngularAndMVC\Web API Project\bin\ru\Microsoft.Data.OData.resources.dll
+D:\PC Backup\AngularAndMVC\Web API Project\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+D:\PC Backup\AngularAndMVC\Web API Project\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+D:\PC Backup\AngularAndMVC\Web API Project\bin\de\System.Spatial.resources.dll
+D:\PC Backup\AngularAndMVC\Web API Project\bin\es\System.Spatial.resources.dll
+D:\PC Backup\AngularAndMVC\Web API Project\bin\fr\System.Spatial.resources.dll
+D:\PC Backup\AngularAndMVC\Web API Project\bin\it\System.Spatial.resources.dll
+D:\PC Backup\AngularAndMVC\Web API Project\bin\ja\System.Spatial.resources.dll
+D:\PC Backup\AngularAndMVC\Web API Project\bin\ko\System.Spatial.resources.dll
+D:\PC Backup\AngularAndMVC\Web API Project\bin\ru\System.Spatial.resources.dll
+D:\PC Backup\AngularAndMVC\Web API Project\bin\zh-Hans\System.Spatial.resources.dll
+D:\PC Backup\AngularAndMVC\Web API Project\bin\zh-Hant\System.Spatial.resources.dll
+D:\PC Backup\AngularAndMVC\Web API Project\obj\Release\Web API Project.csprojResolveAssemblyReference.cache
+D:\PC Backup\AngularAndMVC\Web API Project\obj\Release\Web API Project.dll
+D:\PC Backup\AngularAndMVC\Web API Project\obj\Release\Web API Project.pdb

@@ -1,0 +1,33 @@
+D:\PC Backup\AngularAndMVC\MyCalculatorServiceHost\obj\Debug\MyCalculatorServiceHost.csprojResolveAssemblyReference.cache
+D:\PC Backup\AngularAndMVC\MyCalculatorServiceHost\bin\Debug\MyCalculatorServiceHost.exe.config
+D:\PC Backup\AngularAndMVC\MyCalculatorServiceHost\bin\Debug\MyCalculatorServiceHost.exe
+D:\PC Backup\AngularAndMVC\MyCalculatorServiceHost\bin\Debug\MyCalculatorServiceHost.pdb
+D:\PC Backup\AngularAndMVC\MyCalculatorServiceHost\obj\Debug\MyCalculatorServiceHost.exe
+D:\PC Backup\AngularAndMVC\MyCalculatorServiceHost\obj\Debug\MyCalculatorServiceHost.pdb
+D:\PC Backup\AngularAndMVC\MyCalculatorServiceHost\bin\Debug\WCFRest.dll
+D:\PC Backup\AngularAndMVC\MyCalculatorServiceHost\bin\Debug\EntityFramework.dll
+D:\PC Backup\AngularAndMVC\MyCalculatorServiceHost\bin\Debug\WCFRest.pdb
+D:\PC Backup\AngularAndMVC\MyCalculatorServiceHost\bin\Debug\EntityFramework.xml
+D:\PC Backup\AngularAndMVC\MyCalculatorServiceHost\bin\Debug\Web API Project.dll
+D:\PC Backup\AngularAndMVC\MyCalculatorServiceHost\bin\Debug\System.Web.Http.dll
+D:\PC Backup\AngularAndMVC\MyCalculatorServiceHost\bin\Debug\System.Web.Mvc.dll
+D:\PC Backup\AngularAndMVC\MyCalculatorServiceHost\bin\Debug\System.Web.Optimization.dll
+D:\PC Backup\AngularAndMVC\MyCalculatorServiceHost\bin\Debug\System.Web.Http.WebHost.dll
+D:\PC Backup\AngularAndMVC\MyCalculatorServiceHost\bin\Debug\System.Web.Http.SelfHost.dll
+D:\PC Backup\AngularAndMVC\MyCalculatorServiceHost\bin\Debug\System.Net.Http.Formatting.dll
+D:\PC Backup\AngularAndMVC\MyCalculatorServiceHost\bin\Debug\Newtonsoft.Json.dll
+D:\PC Backup\AngularAndMVC\MyCalculatorServiceHost\bin\Debug\System.Web.Razor.dll
+D:\PC Backup\AngularAndMVC\MyCalculatorServiceHost\bin\Debug\System.Web.WebPages.Razor.dll
+D:\PC Backup\AngularAndMVC\MyCalculatorServiceHost\bin\Debug\System.Web.WebPages.dll
+D:\PC Backup\AngularAndMVC\MyCalculatorServiceHost\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\PC Backup\AngularAndMVC\MyCalculatorServiceHost\bin\Debug\Web API Project.pdb
+D:\PC Backup\AngularAndMVC\MyCalculatorServiceHost\bin\Debug\System.Web.Http.xml
+D:\PC Backup\AngularAndMVC\MyCalculatorServiceHost\bin\Debug\System.Web.Mvc.xml
+D:\PC Backup\AngularAndMVC\MyCalculatorServiceHost\bin\Debug\System.Web.Http.WebHost.xml
+D:\PC Backup\AngularAndMVC\MyCalculatorServiceHost\bin\Debug\System.Web.Http.SelfHost.xml
+D:\PC Backup\AngularAndMVC\MyCalculatorServiceHost\bin\Debug\System.Net.Http.Formatting.xml
+D:\PC Backup\AngularAndMVC\MyCalculatorServiceHost\bin\Debug\Newtonsoft.Json.xml
+D:\PC Backup\AngularAndMVC\MyCalculatorServiceHost\bin\Debug\System.Web.Razor.xml
+D:\PC Backup\AngularAndMVC\MyCalculatorServiceHost\bin\Debug\System.Web.WebPages.Razor.xml
+D:\PC Backup\AngularAndMVC\MyCalculatorServiceHost\bin\Debug\System.Web.WebPages.xml
+D:\PC Backup\AngularAndMVC\MyCalculatorServiceHost\bin\Debug\System.Web.WebPages.Deployment.xml

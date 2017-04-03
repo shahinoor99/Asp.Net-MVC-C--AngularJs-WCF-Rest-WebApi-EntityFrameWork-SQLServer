@@ -1,0 +1,174 @@
+﻿<script src="~/Scripts/angular.min.js"></script>
+<script src="~/Scripts/MyScript/Modules.js"></script>
+<script src="~/Scripts/MyScript/Services.js"></script>
+<script src="~/Scripts/MyScript/Controllers.js"></script>
+<script src="~/Scripts/jquery-3.1.1.min.js"></script>
+<script>
+
+    //var LandingPageController = function ($scope) {
+    //    $scope.models = {
+    //        helloAngular: 'I work!'
+    //    };
+    //}
+
+    //var AwesomeAngularMVCApp = angular.module('AwesomeAngularMVCApp', []);
+
+    //AwesomeAngularMVCApp.controller('LandingPageController', LandingPageController);
+
+    //var configFunction = function ($routeProvider) {
+    //    $routeProvider.
+    //        when('/routeOne', {
+    //            templateUrl: 'Home/Index'
+    //        })
+    //        .when('/routeTwo', {
+    //            templateUrl: 'routesDemo/two'
+    //        })
+    //        .when('/routeThree', {
+    //            templateUrl: 'routesDemo/three'
+    //        });
+    //}
+    //configFunction.$inject = ['$routeProvider'];
+
+    //AwesomeAngularMVCApp.config(configFunction);
+
+    var myApp = angular.module('myModule', []);
+    myApp.service("crudAJService", function ($http) {
+        //get All Books
+        this.getBooks = function () {
+            return $http({
+                url: "/Home/GetAllUser",
+                method: "GET"
+                //params: { number: 4, name: "angular" }
+            });
+        };
+
+    });
+    myApp.controller('myController', function ($scope, crudAJService) {
+        GetAllBooks();
+        //To Get all book records
+        function GetAllBooks() {
+            debugger;
+            var getBookData = crudAJService.getBooks();
+            getBookData.then(function (book) {
+                $scope.books = book.data;
+            }, function () {
+                alert('Error in getting book records');
+            });
+        }
+        //$scope.init = function (UserTable) {
+        //    $scope.UserTable = UserTable;
+        //}
+    });
+    //$(function () {
+    //    debugger;
+    //    var app = angular.module("mvcCRUDApp", []);
+    //    app.service("crudAJService", function ($http) {
+
+    //        //get All Books
+    //        this.getBooks = function () {
+    //            return $http.get("Home/GetAllUser");
+    //        };
+
+    //        //// get Book by bookId
+    //        //this.getBook = function (bookId) {
+    //        //    var response = $http({
+    //        //        method: "post",
+    //        //        url: "Home/GetBookById",
+    //        //        params: {
+    //        //            id: JSON.stringify(bookId)
+    //        //        }
+    //        //    });
+    //        //    return response;
+    //        //}
+
+    //    });
+
+    //        app.controller('mvcCRUDCtrl', function ($scope) {
+    //            debugger;
+    //        $scope.divBook = false;
+    //        GetAllBooks();
+    //        debugger;
+    //        //To Get all book records
+    //        function GetAllBooks() {
+    //            debugger;
+    //            var getBookData = $http.get("Home/GetAllUser"); //crudAJService.getBooks();
+    //            getBookData.then(function (book) {
+    //                $scope.books = book.data;
+    //            }, function () {
+    //                alert('Error in getting book records');
+    //            });
+    //        }
+
+    //        function ClearFields() {
+    //            $scope.Id = "";
+    //            $scope.Name = "";
+    //            $scope.Address = "";
+    //            $scope.City = "";
+    //        }
+    //        $scope.Cancel = function () {
+    //            $scope.divBook = false;
+    //        };
+    //    });
+    //});
+</script>
+@*@model IEnumerable<AngulerWCFAndMVC.Models.UserTable>*@
+
+@*<div ng-controller="mvcCRUDCtrl">
+    <div class="divList">
+        <p><b><i>Book List</i></b></p>
+        <table class="table table-hover">
+            <tr>
+                <td><b>ID</b></td>
+                <td><b>Name</b></td>
+                <td><b>Address</b></td>
+                <td><b>City</b></td>
+                <td><b>Action</b></td>
+            </tr>
+            <tr ng-repeat="book in books">
+                <td>
+                    {{book.Id}}
+                </td>
+                <td>
+                    {{book.Name}}
+                </td>
+                <td>
+                    {{book.Address}}
+                </td>
+                <td>
+                    {{book.City}}
+                </td>
+
+                <td>
+                    <span ng-click="editBook(book)" class="btn btn-primary">Edit</span>
+                    <span ng-click="deleteBook(book)" class="btn btn-danger">Delete</span>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>*@
+<div ng-app="myModule">
+    <div ng-controller="myController">
+        <table>
+            <tr ng-repeat="e in books">
+                <td>{{e.Name}}</td>
+                <td>{{e.Address}}</td>
+                <td>{{e.City}}</td>
+            </tr>
+
+        </table>
+    </div>
+</div>
+
+@*<!DOCTYPE html>
+    <html ng-app="myController" ng-controller="LandingPageController">
+    <head>
+        <title ng-bind="models.helloAngular"></title>
+    </head>
+    <body>
+        <input type="text" ng-model="models.helloAngular" />
+        <h1>{{models.helloAngular}}</h1>
+
+        <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script>
+        @Scripts.Render("~/bundles/AwesomeAngularMVCApp")
+    </body>
+    </html>*@

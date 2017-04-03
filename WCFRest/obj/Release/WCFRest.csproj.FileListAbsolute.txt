@@ -1,0 +1,10 @@
+D:\PC Backup\AngularAndMVC\WCFRest\bin\WCFRest.dll.config
+D:\PC Backup\AngularAndMVC\WCFRest\bin\WCFRest.dll
+D:\PC Backup\AngularAndMVC\WCFRest\bin\WCFRest.pdb
+D:\PC Backup\AngularAndMVC\WCFRest\bin\EntityFramework.dll
+D:\PC Backup\AngularAndMVC\WCFRest\bin\EntityFramework.SqlServer.dll
+D:\PC Backup\AngularAndMVC\WCFRest\bin\EntityFramework.xml
+D:\PC Backup\AngularAndMVC\WCFRest\bin\EntityFramework.SqlServer.xml
+D:\PC Backup\AngularAndMVC\WCFRest\obj\Release\WCFRest.csprojResolveAssemblyReference.cache
+D:\PC Backup\AngularAndMVC\WCFRest\obj\Release\WCFRest.dll
+D:\PC Backup\AngularAndMVC\WCFRest\obj\Release\WCFRest.pdb
